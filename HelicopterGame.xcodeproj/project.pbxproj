@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AD203F9428610FEE007DA238 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD203F9328610FEE007DA238 /* Obstacle.swift */; };
+		AD203FCA28612902007DA238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD203FC928612902007DA238 /* Assets.xcassets */; };
+		AD203FD028612902007DA238 /* WatchPlay WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD203FCF28612902007DA238 /* WatchPlay WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD203FD528612902007DA238 /* HelicopterGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD203FD428612902007DA238 /* HelicopterGameApp.swift */; };
+		AD203FD728612902007DA238 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD203FD628612902007DA238 /* ContentView.swift */; };
+		AD203FD928612902007DA238 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD203FD828612902007DA238 /* NotificationController.swift */; };
+		AD203FDB28612902007DA238 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD203FDA28612902007DA238 /* NotificationView.swift */; };
+		AD203FDD28612902007DA238 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD203FDC28612902007DA238 /* ComplicationController.swift */; };
+		AD203FDF28612903007DA238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD203FDE28612903007DA238 /* Assets.xcassets */; };
+		AD203FE228612903007DA238 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD203FE128612903007DA238 /* Preview Assets.xcassets */; };
+		AD203FE728612903007DA238 /* WatchPlay.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AD203FC728612901007DA238 /* WatchPlay.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD6D3BDE2860FFA0000F0025 /* HelicopterGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6D3BDD2860FFA0000F0025 /* HelicopterGameApp.swift */; };
 		AD6D3BE02860FFA0000F0025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6D3BDF2860FFA0000F0025 /* ContentView.swift */; };
 		AD6D3BE22860FFA5000F0025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6D3BE12860FFA5000F0025 /* Assets.xcassets */; };
@@ -16,8 +26,62 @@
 		AD6D3BEF28610157000F0025 /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6D3BEE28610156000F0025 /* Helicopter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AD203FD128612902007DA238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6D3BD22860FFA0000F0025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD203FCE28612902007DA238;
+			remoteInfo = "WatchPlay WatchKit Extension";
+		};
+		AD203FE528612903007DA238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6D3BD22860FFA0000F0025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD203FC628612901007DA238;
+			remoteInfo = WatchPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD203FC428612877007DA238 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AD203FE728612903007DA238 /* WatchPlay.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD203FEB28612903007DA238 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AD203FD028612902007DA238 /* WatchPlay WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AD203F9328610FEE007DA238 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		AD203FC728612901007DA238 /* WatchPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD203FC928612902007DA238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD203FCF28612902007DA238 /* WatchPlay WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchPlay WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD203FD428612902007DA238 /* HelicopterGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelicopterGameApp.swift; sourceTree = "<group>"; };
+		AD203FD628612902007DA238 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD203FD828612902007DA238 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AD203FDA28612902007DA238 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AD203FDC28612902007DA238 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AD203FDE28612903007DA238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD203FE128612903007DA238 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD203FE328612903007DA238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD203FE428612903007DA238 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		AD6D3BDA2860FFA0000F0025 /* HelicopterGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelicopterGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6D3BDD2860FFA0000F0025 /* HelicopterGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelicopterGameApp.swift; sourceTree = "<group>"; };
 		AD6D3BDF2860FFA0000F0025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +92,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD203FCC28612902007DA238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD6D3BD72860FFA0000F0025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +109,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD203FC828612901007DA238 /* WatchPlay */ = {
+			isa = PBXGroup;
+			children = (
+				AD203FC928612902007DA238 /* Assets.xcassets */,
+			);
+			path = WatchPlay;
+			sourceTree = "<group>";
+		};
+		AD203FD328612902007DA238 /* WatchPlay WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD203FD428612902007DA238 /* HelicopterGameApp.swift */,
+				AD203FD628612902007DA238 /* ContentView.swift */,
+				AD203FD828612902007DA238 /* NotificationController.swift */,
+				AD203FDA28612902007DA238 /* NotificationView.swift */,
+				AD203FDC28612902007DA238 /* ComplicationController.swift */,
+				AD203FDE28612903007DA238 /* Assets.xcassets */,
+				AD203FE328612903007DA238 /* Info.plist */,
+				AD203FE428612903007DA238 /* PushNotificationPayload.apns */,
+				AD203FE028612903007DA238 /* Preview Content */,
+			);
+			path = "WatchPlay WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AD203FE028612903007DA238 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD203FE128612903007DA238 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		AD6D3BD12860FFA0000F0025 = {
 			isa = PBXGroup;
 			children = (
 				AD6D3BDC2860FFA0000F0025 /* HelicopterGame */,
+				AD203FC828612901007DA238 /* WatchPlay */,
+				AD203FD328612902007DA238 /* WatchPlay WatchKit Extension */,
 				AD6D3BDB2860FFA0000F0025 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				AD6D3BDA2860FFA0000F0025 /* HelicopterGame.app */,
+				AD203FC728612901007DA238 /* WatchPlay.app */,
+				AD203FCF28612902007DA238 /* WatchPlay WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +164,9 @@
 		AD6D3BDC2860FFA0000F0025 /* HelicopterGame */ = {
 			isa = PBXGroup;
 			children = (
+				AD6D3BEB2860FFB2000F0025 /* Components */,
 				AD6D3BDD2860FFA0000F0025 /* HelicopterGameApp.swift */,
 				AD6D3BDF2860FFA0000F0025 /* ContentView.swift */,
-				AD6D3BEB2860FFB2000F0025 /* Components */,
 				AD6D3BE12860FFA5000F0025 /* Assets.xcassets */,
 				AD6D3BE32860FFA5000F0025 /* Preview Content */,
 			);
@@ -87,6 +194,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD203FC628612901007DA238 /* WatchPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD203FEC28612903007DA238 /* Build configuration list for PBXNativeTarget "WatchPlay" */;
+			buildPhases = (
+				AD203FC528612901007DA238 /* Resources */,
+				AD203FEB28612903007DA238 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD203FD228612902007DA238 /* PBXTargetDependency */,
+			);
+			name = WatchPlay;
+			productName = WatchPlay;
+			productReference = AD203FC728612901007DA238 /* WatchPlay.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AD203FCE28612902007DA238 /* WatchPlay WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD203FE828612903007DA238 /* Build configuration list for PBXNativeTarget "WatchPlay WatchKit Extension" */;
+			buildPhases = (
+				AD203FCB28612902007DA238 /* Sources */,
+				AD203FCC28612902007DA238 /* Frameworks */,
+				AD203FCD28612902007DA238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchPlay WatchKit Extension";
+			productName = "WatchPlay WatchKit Extension";
+			productReference = AD203FCF28612902007DA238 /* WatchPlay WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		AD6D3BD92860FFA0000F0025 /* HelicopterGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD6D3BE82860FFA5000F0025 /* Build configuration list for PBXNativeTarget "HelicopterGame" */;
@@ -94,10 +235,12 @@
 				AD6D3BD62860FFA0000F0025 /* Sources */,
 				AD6D3BD72860FFA0000F0025 /* Frameworks */,
 				AD6D3BD82860FFA0000F0025 /* Resources */,
+				AD203FC428612877007DA238 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD203FE628612903007DA238 /* PBXTargetDependency */,
 			);
 			name = HelicopterGame;
 			productName = HelicopterGame;
@@ -114,6 +257,12 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					AD203FC628612901007DA238 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					AD203FCE28612902007DA238 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					AD6D3BD92860FFA0000F0025 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -133,11 +282,30 @@
 			projectRoot = "";
 			targets = (
 				AD6D3BD92860FFA0000F0025 /* HelicopterGame */,
+				AD203FC628612901007DA238 /* WatchPlay */,
+				AD203FCE28612902007DA238 /* WatchPlay WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD203FC528612901007DA238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD203FCA28612902007DA238 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD203FCD28612902007DA238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD203FE228612903007DA238 /* Preview Assets.xcassets in Resources */,
+				AD203FDF28612903007DA238 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD6D3BD82860FFA0000F0025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +318,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD203FCB28612902007DA238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD203FD928612902007DA238 /* NotificationController.swift in Sources */,
+				AD203FD728612902007DA238 /* ContentView.swift in Sources */,
+				AD203FDD28612902007DA238 /* ComplicationController.swift in Sources */,
+				AD203FD528612902007DA238 /* HelicopterGameApp.swift in Sources */,
+				AD203FDB28612902007DA238 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD6D3BD62860FFA0000F0025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,7 +344,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD203FD228612902007DA238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD203FCE28612902007DA238 /* WatchPlay WatchKit Extension */;
+			targetProxy = AD203FD128612902007DA238 /* PBXContainerItemProxy */;
+		};
+		AD203FE628612903007DA238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD203FC628612901007DA238 /* WatchPlay */;
+			targetProxy = AD203FE528612903007DA238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AD203FE928612903007DA238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchPlay WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WCA4WY5YCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchPlay WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchPlay WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Khidr.HelicopterGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		AD203FEA28612903007DA238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchPlay WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WCA4WY5YCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchPlay WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchPlay WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Khidr.HelicopterGame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		AD203FED28612903007DA238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WCA4WY5YCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchPlay_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchPlay;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Khidr.HelicopterGame;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Khidr.HelicopterGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		AD203FEE28612903007DA238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WCA4WY5YCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchPlay_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchPlay;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Khidr.HelicopterGame;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Khidr.HelicopterGame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 		AD6D3BE62860FFA5000F0025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +647,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD203FE828612903007DA238 /* Build configuration list for PBXNativeTarget "WatchPlay WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD203FE928612903007DA238 /* Debug */,
+				AD203FEA28612903007DA238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD203FEC28612903007DA238 /* Build configuration list for PBXNativeTarget "WatchPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD203FED28612903007DA238 /* Debug */,
+				AD203FEE28612903007DA238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AD6D3BD52860FFA0000F0025 /* Build configuration list for PBXProject "HelicopterGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

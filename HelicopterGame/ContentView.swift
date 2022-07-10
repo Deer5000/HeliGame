@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
+import WatchConnectivity
 
 struct ContentView: View {
     
     @State private var heliPosition = CGPoint(x: 100, y: 100)
     @State private var obstPosition = CGPoint(x: 1000, y: 300)
+    @State private var isPaused = false
+    @State private var score = 0
     
-    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    @State var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     
     
@@ -30,15 +33,19 @@ struct ContentView: View {
                 Obstacle()
                     .position(self.obstPosition)
                     .onReceive(self.timer) {_ in
-                        withAnimation {
-                            self.obstMove()
-                        }
+                        self.obstMove()
                     }
                 
+                Text("\(self.score)")
+                    .foregroundColor(Color.white)
+                    .position(x: geo.size.width - 100, y: geo.size.height / 10)
+                
+                self.isPaused ? Button("Restart"){self.resume()} : nil
                 
             }
             .frame(width: geo.size.width, height: geo.size.height)
             .background(Color.black)
+            //this is where to put tapGesture
             .gesture(
                 TapGesture()
                     .onEnded{
@@ -46,6 +53,10 @@ struct ContentView: View {
                             self.heliPosition.y -= 100
                         }
                     })
+            .onReceive(self.timer) { _ in
+                self.collisionDetection()
+                self.score += 1
+            }
             
         }
         .edgesIgnoringSafeArea(.all)
@@ -53,10 +64,42 @@ struct ContentView: View {
     
     func gravity() {
         withAnimation{
-        self.heliPosition.y += 20
+            self.heliPosition.y += 20
         }
     }
     func obstMove() {
-        self.obstPosition.x -= 20
+        if self.obstPosition.x > 0 {
+            withAnimation{
+                self.obstPosition.x -= 20
+            }
+        } else {
+            self.obstPosition.x = 1000
+            self.obstPosition.y = CGFloat.random(in: 0...500)
+            
+        }
+    }
+    
+    func pause() {
+        self.timer.upstream.connect().cancel()
+    }
+    
+    func resume() {
+        self.timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+        
+        self.obstPosition.x = 1000 // move obsticle to starting position
+        self.heliPosition = CGPoint(x: 100, y: 100) // helicopter to starting position
+        self.isPaused = false
+        self.score = 0
+    }
+    
+    func collisionDetection() {
+        
+        if abs(heliPosition.x - obstPosition.x) < (25 + 10) && abs(heliPosition.y - obstPosition.y) < (25 + 100) {
+            self.pause()
+            self.isPaused = true
+        }
+        
+        
     }
 }
+

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Pixel: View {
-    let size: Int
+    let size: CGFloat
     let color: Color
     
     
